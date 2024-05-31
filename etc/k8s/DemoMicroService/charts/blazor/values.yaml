@@ -1,0 +1,18 @@
+config:
+  selfUrl: # https://blazor.demomicroservice.dev
+  gatewayUrl: # https://gateway-web.demomicroservice.dev
+  authServer:
+      authority: # https://demomicroservice-st-authserver
+      responseType: "code"
+  AbpLicenseCode: #
+
+ingress:
+  host: # blazor.demomicroservice.dev
+  tlsSecret: demomicroservice-tls
+
+image:
+  repository: mycompanyname/demomicroservice-app-blazor
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}

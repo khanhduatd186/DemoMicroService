@@ -1,0 +1,9 @@
+{
+  "version": "0.1.0",
+  "name": "DemoMicroServiceAuthServer",
+  "private": true,
+  "dependencies": {
+    "@volo/abp.aspnetcore.mvc.ui.theme.leptonx": "~3.1.3",
+    "@volo/account": "~8.1.3"
+  }
+}

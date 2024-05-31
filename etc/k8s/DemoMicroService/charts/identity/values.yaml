@@ -1,0 +1,47 @@
+config:
+  selfUrl: # https://identity.demomicroservice.dev
+  corsOrigins: # https://demomicroservice-st-gateway-web,https://demomicroservice-st-gateway-public-web
+  connectionStrings:
+    identityService: #
+    administrationService: #
+    saasService: #
+  authServer:
+    authority: # http://demomicroservice-st-authserver
+    requireHttpsMetadata: # "false"
+    metadataAddress: # https://authserver.demomicroservice.dev/.well-known/openid-configuration
+    swaggerClientId: WebGateway_Swagger
+  dotnetEnv: Staging
+  redisHost: #
+  rabbitmqHost: #
+  elasticsearchUrl: #
+  stringEncryptionDefaultPassPhrase: gsKnGZ041HLL4IM8
+  AbpLicenseCode: #
+
+# Seeded applications and resources 
+openIdDict:
+  applications:
+    authServerRootUrl: #
+    angularRootUrl: #
+    webRootUrl: #
+    blazorRootUrl: #
+    blazorServerRootUrl: #
+    publicWebRootUrl: #
+    webGatewayRootUrl: #
+    publicWebGatewayRootUrl: #
+  resources:  
+    accountServiceRootUrl: #
+    administrationServiceRootUrl: #
+    identityServiceRootUrl: #
+    saasServiceRootUrl: #
+    productServiceRootUrl: #
+
+ingress:
+  host: identity.demomicroservice.dev
+  tlsSecret: demomicroservice-tls
+
+image:
+  repository: mycompanyname/demomicroservice-service-identity
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}

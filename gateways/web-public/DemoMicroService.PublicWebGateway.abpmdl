@@ -1,0 +1,13 @@
+{
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "DemoMicroService.PublicWebGateway": {
+      "path": "src/DemoMicroService.PublicWebGateway/DemoMicroService.PublicWebGateway.abppkg",
+      "folder": "src"
+    }
+  }
+}

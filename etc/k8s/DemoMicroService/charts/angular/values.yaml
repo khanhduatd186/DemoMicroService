@@ -1,0 +1,21 @@
+config:
+  selfUrl: # https://angular.demomicroservice.dev
+  gatewayUrl: # https://gateway-web.demomicroservice.dev
+  authServer:
+      authority: # https://authserver.demomicroservice.dev
+      requireHttpsMetadata: # false
+      responseType: "code"
+      strictDiscoveryDocumentValidation: false
+      skipIssuerCheck: true
+  AbpLicenseCode: #
+
+ingress:
+  host: # angular.demomicroservice.dev
+  tlsSecret: demomicroservice-tls
+
+image:
+  repository: mycompanyname/demomicroservice-app-angular
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}

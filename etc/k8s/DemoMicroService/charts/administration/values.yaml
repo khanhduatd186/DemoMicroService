@@ -1,0 +1,37 @@
+config:
+  selfUrl: # https://administration.demomicroservice.dev
+  corsOrigins: #
+  connectionStrings:
+    administrationService: #
+    saasService: #
+  authServer:
+    authority: # http://demomicroservice-st-authserver
+    requireHttpsMetadata: "false"
+    metadataAddress: # http://admin.demomicroservice.dev/.well-known/openid-configuration
+    swaggerClientId: WebGateway_Swagger
+  remoteServices:
+    abpIdentityBaseUrl: #
+    useCurrentToken: "false"
+  dotnetEnv: #
+  redisHost: #
+  rabbitmqHost: #
+  elasticsearchUrl: #
+  stringEncryptionDefaultPassPhrase: gsKnGZ041HLL4IM8
+  AbpLicenseCode: #
+
+synchedCommunication:
+  authority: # https://admin.demomicroservice.dev
+  requireHttps: #
+  validateIssuerName: #
+  validateEndpoints: #
+
+ingress:
+  host: # demomicroservice-st-administration
+  tlsSecret: demomicroservice-tls
+
+image:
+  repository: mycompanyname/demomicroservice-service-administration
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}

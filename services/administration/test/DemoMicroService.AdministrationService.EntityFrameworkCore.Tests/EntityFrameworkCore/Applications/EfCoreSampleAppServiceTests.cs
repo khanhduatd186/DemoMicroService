@@ -1,0 +1,8 @@
+using DemoMicroService.AdministrationService.Samples;
+
+namespace DemoMicroService.AdministrationService.EntityFrameworkCore.Applications;
+
+public class EfCoreSampleAppServiceTests : SampleAppService_Tests<AdministrationServiceEntityFrameworkCoreTestModule>
+{
+
+}

@@ -1,0 +1,54 @@
+{
+  "applications": {
+    "Docker-Dependencies": {
+      "type": "cli",
+      "workingDirectory": "../docker",
+      "startCommand": "./up.ps1",
+      "stopCommand": "./down.ps1"
+    },
+    "DemoMicroService.AuthServer": {
+      "type": "dotnet-project",
+      "path": "../../apps/auth-server/src/DemoMicroService.AuthServer/DemoMicroService.AuthServer.csproj"
+    },
+    "DemoMicroService.Blazor": {
+      "type": "dotnet-project",
+      "path": "../../apps/blazor/src/DemoMicroService.Blazor/DemoMicroService.Blazor.csproj"
+    },
+    "DemoMicroService.Blazor.Server": {
+      "type": "dotnet-project",
+      "path": "../../apps/blazor/src/DemoMicroService.Blazor.Server/DemoMicroService.Blazor.Server.csproj"
+    },
+    "DemoMicroService.PublicWeb": {
+      "type": "dotnet-project",
+      "path": "../../apps/public-web/src/DemoMicroService.PublicWeb/DemoMicroService.PublicWeb.csproj"
+    },
+    "DemoMicroService.Web": {
+      "type": "dotnet-project",
+      "path": "../../apps/web/src/DemoMicroService.Web/DemoMicroService.Web.csproj"
+    },
+    "DemoMicroService.AdministrationService.HttpApi.Host": {
+      "type": "dotnet-project",
+      "path": "../../services/administration/src/DemoMicroService.AdministrationService.HttpApi.Host/DemoMicroService.AdministrationService.HttpApi.Host.csproj"
+    },
+    "DemoMicroService.IdentityService.HttpApi.Host": {
+      "type": "dotnet-project",
+      "path": "../../services/identity/src/DemoMicroService.IdentityService.HttpApi.Host/DemoMicroService.IdentityService.HttpApi.Host.csproj"
+    },
+    "DemoMicroService.ProductService.HttpApi.Host": {
+      "type": "dotnet-project",
+      "path": "../../services/product/src/DemoMicroService.ProductService.HttpApi.Host/DemoMicroService.ProductService.HttpApi.Host.csproj"
+    },
+    "DemoMicroService.SaasService.HttpApi.Host": {
+      "type": "dotnet-project",
+      "path": "../../services/saas/src/DemoMicroService.SaasService.HttpApi.Host/DemoMicroService.SaasService.HttpApi.Host.csproj"
+    },
+    "DemoMicroService.WebGateway": {
+      "type": "dotnet-project",
+      "path": "../../gateways/web/src/DemoMicroService.WebGateway/DemoMicroService.WebGateway.csproj"
+    },
+    "DemoMicroService.PublicWebGateway": {
+      "type": "dotnet-project",
+      "path": "../../gateways/web-public/src/DemoMicroService.PublicWebGateway/DemoMicroService.PublicWebGateway.csproj"
+    }
+  }
+}

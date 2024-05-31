@@ -1,0 +1,58 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "DemoMicroService.IdentityService.HttpApi": {
+      "path": "src/DemoMicroService.IdentityService.HttpApi/DemoMicroService.IdentityService.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.IdentityService.Application": {
+      "path": "src/DemoMicroService.IdentityService.Application/DemoMicroService.IdentityService.Application.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.IdentityService.Domain": {
+      "path": "src/DemoMicroService.IdentityService.Domain/DemoMicroService.IdentityService.Domain.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.IdentityService.Domain.Shared": {
+      "path": "src/DemoMicroService.IdentityService.Domain.Shared/DemoMicroService.IdentityService.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.IdentityService.EntityFrameworkCore": {
+      "path": "src/DemoMicroService.IdentityService.EntityFrameworkCore/DemoMicroService.IdentityService.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.IdentityService.HttpApi.Client": {
+      "path": "src/DemoMicroService.IdentityService.HttpApi.Client/DemoMicroService.IdentityService.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.IdentityService.Application.Contracts": {
+      "path": "src/DemoMicroService.IdentityService.Application.Contracts/DemoMicroService.IdentityService.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.IdentityService.HttpApi.Host": {
+      "path": "src/DemoMicroService.IdentityService.HttpApi.Host/DemoMicroService.IdentityService.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.IdentityService.TestBase": {
+      "path": "test/DemoMicroService.IdentityService.TestBase/DemoMicroService.IdentityService.TestBase.abppkg",
+      "folder": "test"
+    },
+    "DemoMicroService.IdentityService.Domain.Tests": {
+      "path": "test/DemoMicroService.IdentityService.Domain.Tests/DemoMicroService.IdentityService.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "DemoMicroService.IdentityService.EntityFrameworkCore.Tests": {
+      "path": "test/DemoMicroService.IdentityService.EntityFrameworkCore.Tests/DemoMicroService.IdentityService.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "DemoMicroService.IdentityService.Application.Tests": {
+      "path": "test/DemoMicroService.IdentityService.Application.Tests/DemoMicroService.IdentityService.Application.Tests.abppkg",
+      "folder": "test"
+    }
+  }
+}

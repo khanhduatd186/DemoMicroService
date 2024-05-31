@@ -1,0 +1,66 @@
+name: DemoMicroService
+services:
+- name: auth-server
+  project: apps/auth-server/src/DemoMicroService.AuthServer/DemoMicroService.AuthServer.csproj
+  bindings:
+    - protocol: https
+      port: 44322
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=a9df9b48-fb9c-4f4b-a14f-448a653ab7b6
+- name: administration-service
+  project: services/administration/src/DemoMicroService.AdministrationService.HttpApi.Host/DemoMicroService.AdministrationService.HttpApi.Host.csproj
+  bindings:
+    - protocol: https
+      port: 44367
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=a9df9b48-fb9c-4f4b-a14f-448a653ab7b6
+- name: identity-service
+  project: services/identity/src/DemoMicroService.IdentityService.HttpApi.Host/DemoMicroService.IdentityService.HttpApi.Host.csproj
+  bindings:
+    - protocol: https
+      port: 44388
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=a9df9b48-fb9c-4f4b-a14f-448a653ab7b6
+- name: saas-service
+  project: services/saas/src/DemoMicroService.SaasService.HttpApi.Host/DemoMicroService.SaasService.HttpApi.Host.csproj
+  bindings:
+    - protocol: https
+      port: 44381
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=a9df9b48-fb9c-4f4b-a14f-448a653ab7b6
+- name: product-service
+  project: services/product/src/DemoMicroService.ProductService.HttpApi.Host/DemoMicroService.ProductService.HttpApi.Host.csproj
+  bindings:
+    - protocol: https
+      port: 44361
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=a9df9b48-fb9c-4f4b-a14f-448a653ab7b6
+- name: web-gateway
+  project: gateways/web/src/DemoMicroService.WebGateway/DemoMicroService.WebGateway.csproj
+  bindings:
+    - protocol: https
+      port: 44325
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=a9df9b48-fb9c-4f4b-a14f-448a653ab7b6  
+- name: web-public-gateway
+  project: gateways/web-public/src/DemoMicroService.PublicWebGateway/DemoMicroService.PublicWebGateway.csproj
+  bindings:
+    - protocol: https
+      port: 44353
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=a9df9b48-fb9c-4f4b-a14f-448a653ab7b6
+- name: blazor
+  project: apps/blazor/src/DemoMicroService.Blazor/DemoMicroService.Blazor.csproj
+  bindings:
+    - protocol: https
+      port: 44307
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=a9df9b48-fb9c-4f4b-a14f-448a653ab7b6

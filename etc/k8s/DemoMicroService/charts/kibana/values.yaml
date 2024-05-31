@@ -1,0 +1,6 @@
+config:
+  elasticsearchUrl: http://demomicroservice-st-elasticsearch:9200
+
+ingress:
+  host: kibana-demomicroservice.dev
+  tlsSecret: demomicroservice-tls

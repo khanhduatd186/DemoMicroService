@@ -1,0 +1,25 @@
+config:
+  selfUrl: # https://web.demomicroservice.dev
+  gatewayUrl: # http://demomicroservice-st-gateway-web
+  authServer:
+    authority: # https://authserver.demomicroservice.dev
+    requireHttpsMetadata: # "false"
+    isOnK8s: # "true"
+    metaAddress: # http://demomicroservice-st-authserver
+  dotnetEnv: # 
+  redisHost: #
+  rabbitmqHost: #
+  elasticsearchUrl: #
+  stringEncryptionDefaultPassPhrase: gsKnGZ041HLL4IM8
+  AbpLicenseCode: #
+
+ingress:
+  host: # web.demomicroservice.dev
+  tlsSecret: demomicroservice-tls
+
+image:
+  repository: mycompanyname/demomicroservice-app-web
+  tag: latest
+  pullPolicy: IfNotPresent
+
+env: {}

@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{989024FC-446E-43A6-8F83-0EFD8D1A8C7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CAB7C6C7-FC84-41A9-866C-19238C5FB537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoMicroService.Blazor", "src\DemoMicroService.Blazor\DemoMicroService.Blazor.csproj", "{C987E738-0ED6-4C95-9D01-B95C3C9ABE2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C987E738-0ED6-4C95-9D01-B95C3C9ABE2F} = {989024FC-446E-43A6-8F83-0EFD8D1A8C7C}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C987E738-0ED6-4C95-9D01-B95C3C9ABE2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C987E738-0ED6-4C95-9D01-B95C3C9ABE2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C987E738-0ED6-4C95-9D01-B95C3C9ABE2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C987E738-0ED6-4C95-9D01-B95C3C9ABE2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

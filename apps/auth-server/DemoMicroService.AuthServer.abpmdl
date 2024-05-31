@@ -1,0 +1,13 @@
+{
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "DemoMicroService.AuthServer": {
+      "path": "src/DemoMicroService.AuthServer/DemoMicroService.AuthServer.abppkg",
+      "folder": "src"
+    }
+  }
+}

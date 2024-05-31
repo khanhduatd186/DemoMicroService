@@ -1,0 +1,127 @@
+{
+  "folders": {
+    "items": {
+      "services": {
+        "items": {
+          "administration": {
+            "items": {
+              "src": {}
+            }
+          },
+          "identity": {
+            "items": {
+              "src": {}
+            }
+          },
+          "product": {
+            "items": {
+              "src": {}
+            }
+          },
+          "saas": {
+            "items": {
+              "src": {}
+            }
+          }
+        }
+      },
+      "gateways": {
+        "items": {
+          "web": {
+            "items": {
+              "src": {}
+            }
+          },
+          "web-public": {
+            "items": {
+              "src": {}
+            }
+          }
+        }
+      },
+      "apps": {
+        "items": {
+          "auth-server": {
+            "items": {
+              "src": {}
+            }
+          },
+          "blazor": {
+            "items": {
+              "src": {}
+            }
+          },
+          "public-web": {
+            "items": {
+              "src": {}
+            }
+          },
+          "web": {
+            "items": {
+              "src": {}
+            }
+          }
+        }
+      },
+      "shared": {}
+    }
+  },
+  "packages": {
+    "DemoMicroService.AdministrationService.HttpApi.Host": {
+      "path": "services/administration/src/DemoMicroService.AdministrationService.HttpApi.Host/DemoMicroService.AdministrationService.HttpApi.Host.abppkg",
+      "folder": "services/administration/src"
+    },
+    "DemoMicroService.IdentityService.HttpApi.Host": {
+      "path": "services/identity/src/DemoMicroService.IdentityService.HttpApi.Host/DemoMicroService.IdentityService.HttpApi.Host.abppkg",
+      "folder": "services/identity/src"
+    },
+    "DemoMicroService.ProductService.HttpApi.Host": {
+      "path": "services/product/src/DemoMicroService.ProductService.HttpApi.Host/DemoMicroService.ProductService.HttpApi.Host.abppkg",
+      "folder": "services/product/src"
+    },
+    "DemoMicroService.SaasService.HttpApi.Host": {
+      "path": "services/saas/src/DemoMicroService.SaasService.HttpApi.Host/DemoMicroService.SaasService.HttpApi.Host.abppkg",
+      "folder": "services/saas/src"
+    },
+    "DemoMicroService.WebGateway": {
+      "path": "gateways/web/src/DemoMicroService.WebGateway/DemoMicroService.WebGateway.abppkg",
+      "folder": "gateways/web/src"
+    },
+    "DemoMicroService.PublicWebGateway": {
+      "path": "gateways/web-public/src/DemoMicroService.PublicWebGateway/DemoMicroService.PublicWebGateway.abppkg",
+      "folder": "gateways/web-public/src"
+    },
+    "DemoMicroService.AuthServer": {
+      "path": "apps/auth-server/src/DemoMicroService.AuthServer/DemoMicroService.AuthServer.abppkg",
+      "folder": "apps/auth-server/src"
+    },
+    "DemoMicroService.Blazor": {
+      "path": "apps/blazor/src/DemoMicroService.Blazor/DemoMicroService.Blazor.abppkg",
+      "folder": "apps/blazor/src"
+    },
+    "DemoMicroService.DbMigrator": {
+      "path": "shared/DemoMicroService.DbMigrator/DemoMicroService.DbMigrator.abppkg",
+      "folder": "shared"
+    },
+    "DemoMicroService.Shared.Hosting.AspNetCore": {
+      "path": "shared/DemoMicroService.Shared.Hosting.AspNetCore/DemoMicroService.Shared.Hosting.AspNetCore.abppkg",
+      "folder": "shared"
+    },
+    "DemoMicroService.Shared.Hosting.Microservices": {
+      "path": "shared/DemoMicroService.Shared.Hosting.Microservices/DemoMicroService.Shared.Hosting.Microservices.abppkg",
+      "folder": "shared"
+    },
+    "DemoMicroService.Shared.Localization": {
+      "path": "shared/DemoMicroService.Shared.Localization/DemoMicroService.Shared.Localization.abppkg",
+      "folder": "shared"
+    },
+    "DemoMicroService.Shared.Hosting.Gateways": {
+      "path": "shared/DemoMicroService.Shared.Hosting.Gateways/DemoMicroService.Shared.Hosting.Gateways.abppkg",
+      "folder": "shared"
+    },
+    "DemoMicroService.Shared.Hosting": {
+      "path": "shared/DemoMicroService.Shared.Hosting/DemoMicroService.Shared.Hosting.abppkg",
+      "folder": "shared"
+    }
+  }
+}

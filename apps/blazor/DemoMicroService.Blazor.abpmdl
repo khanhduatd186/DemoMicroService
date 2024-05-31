@@ -1,0 +1,13 @@
+{
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "DemoMicroService.Blazor": {
+      "path": "src/DemoMicroService.Blazor/DemoMicroService.Blazor.abppkg",
+      "folder": "src"
+    }
+  }
+}

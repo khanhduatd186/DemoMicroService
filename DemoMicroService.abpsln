@@ -1,0 +1,59 @@
+{
+  "folders": {
+    "items": {
+      "apps": {},
+      "gateways": {},
+      "services": {}
+    }
+  },
+  "modules": {
+    "DemoMicroService": {
+      "path": "DemoMicroService.abpmdl"
+    },
+    "DemoMicroService.AuthServer": {
+      "path": "apps/auth-server/DemoMicroService.AuthServer.abpmdl",
+      "folder": "apps"
+    },
+    "DemoMicroService.Blazor": {
+      "path": "apps/blazor/DemoMicroService.Blazor.abpmdl",
+      "folder": "apps"
+    },
+    "DemoMicroService.PublicWeb": {
+      "path": "apps/public-web/DemoMicroService.PublicWeb.abpmdl",
+      "folder": "apps"
+    },
+    "DemoMicroService.Web": {
+      "path": "apps/web/DemoMicroService.Web.abpmdl",
+      "folder": "apps"
+    },
+    "DemoMicroService.WebGateway": {
+      "path": "gateways/web/DemoMicroService.WebGateway.abpmdl",
+      "folder": "gateways"
+    },
+    "DemoMicroService.PublicWebGateway": {
+      "path": "gateways/web-public/DemoMicroService.PublicWebGateway.abpmdl",
+      "folder": "gateways"
+    },
+    "DemoMicroService.AdministrationService": {
+      "path": "services/administration/DemoMicroService.AdministrationService.abpmdl",
+      "folder": "services"
+    },
+    "DemoMicroService.IdentityService": {
+      "path": "services/identity/DemoMicroService.IdentityService.abpmdl",
+      "folder": "services"
+    },
+    "DemoMicroService.ProductService": {
+      "path": "services/product/DemoMicroService.ProductService.abpmdl",
+      "folder": "services"
+    },
+    "DemoMicroService.SaasService": {
+      "path": "services/saas/DemoMicroService.SaasService.abpmdl",
+      "folder": "services"
+    }
+  },
+  "runProfiles": {
+    "Default": {
+      "path": "etc/run-profiles/Default.abprun.json"
+    }
+  }
+}

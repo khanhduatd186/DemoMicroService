@@ -1,0 +1,31 @@
+
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS builder
+WORKDIR /src
+
+COPY "DemoMicroService.sln" "DemoMicroService.sln"
+
+# Applications
+COPY "apps/auth-server/src/DemoMicroService.AuthServer/DemoMicroService.AuthServer.csproj" "apps/auth-server/src/DemoMicroService.AuthServer/DemoMicroService.AuthServer.csproj"
+COPY "apps/public-web/src/DemoMicroService.PublicWeb/DemoMicroService.PublicWeb.csproj" "apps/public-web/src/DemoMicroService.PublicWeb/DemoMicroService.PublicWeb.csproj"
+COPY "apps/blazor/src/DemoMicroService.Blazor/DemoMicroService.Blazor.csproj" "apps/blazor/src/DemoMicroService.Blazor/DemoMicroService.Blazor.csproj"
+# Shared Projects
+COPY "shared/DemoMicroService.DbMigrator/DemoMicroService.DbMigrator.csproj" "shared/DemoMicroService.DbMigrator/DemoMicroService.DbMigrator.csproj"
+COPY "shared/DemoMicroService.Shared.Hosting/DemoMicroService.Shared.Hosting.csproj" "shared/DemoMicroService.Shared.Hosting/DemoMicroService.Shared.Hosting.csproj"
+COPY "shared/DemoMicroService.Shared.Hosting.Gateways/DemoMicroService.Shared.Hosting.Gateways.csproj" "shared/DemoMicroService.Shared.Hosting.Gateways/DemoMicroService.Shared.Hosting.Gateways.csproj"
+COPY "shared/DemoMicroService.Shared.Hosting.Microservices/DemoMicroService.Shared.Hosting.Microservices.csproj" "shared/DemoMicroService.Shared.Hosting.Microservices/DemoMicroService.Shared.Hosting.Microservices.csproj"
+COPY "shared/DemoMicroService.Shared.Hosting.AspNetCore/DemoMicroService.Shared.Hosting.AspNetCore.csproj" "shared/DemoMicroService.Shared.Hosting.AspNetCore/DemoMicroService.Shared.Hosting.AspNetCore.csproj"
+COPY "shared/DemoMicroService.Shared.Hosting/DemoMicroService.Shared.Hosting.csproj" "shared/DemoMicroService.Shared.Hosting/DemoMicroService.Shared.Hosting.csproj"
+COPY "shared/DemoMicroService.Shared.Localization/DemoMicroService.Shared.Localization.csproj" "shared/DemoMicroService.Shared.Localization/DemoMicroService.Shared.Localization.csproj"
+
+# Microservices
+COPY "services/administration/src/DemoMicroService.AdministrationService.HttpApi.Host/DemoMicroService.AdministrationService.HttpApi.Host.csproj" "services/administration/src/DemoMicroService.AdministrationService.HttpApi.Host/DemoMicroService.AdministrationService.HttpApi.Host.csproj"
+COPY "services/identity/src/DemoMicroService.IdentityService.HttpApi.Host/DemoMicroService.IdentityService.HttpApi.Host.csproj" "services/identity/src/DemoMicroService.IdentityService.HttpApi.Host/DemoMicroService.IdentityService.HttpApi.Host.csproj"
+COPY "services/saas/src/DemoMicroService.SaasService.HttpApi.Host/DemoMicroService.SaasService.HttpApi.Host.csproj" "services/saas/src/DemoMicroService.SaasService.HttpApi.Host/DemoMicroService.SaasService.HttpApi.Host.csproj"
+COPY "services/product/src/DemoMicroService.ProductService.HttpApi.Host/DemoMicroService.ProductService.HttpApi.Host.csproj" "services/product/src/DemoMicroService.ProductService.HttpApi.Host/DemoMicroService.ProductService.HttpApi.Host.csproj"
+# Gateways
+COPY "gateways/web/src/DemoMicroService.WebGateway/DemoMicroService.WebGateway.csproj" "gateways/web/src/DemoMicroService.WebGateway/DemoMicroService.WebGateway.csproj"
+COPY "gateways/web-public/src/DemoMicroService.PublicWebGateway/DemoMicroService.PublicWebGateway.csproj" "gateways/web-public/src/DemoMicroService.PublicWebGateway/DemoMicroService.PublicWebGateway.csproj"
+
+COPY "NuGet.Config" "NuGet.Config"
+
+RUN dotnet restore "DemoMicroService.sln"
