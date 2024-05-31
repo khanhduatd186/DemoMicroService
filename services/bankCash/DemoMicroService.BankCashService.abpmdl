@@ -1,0 +1,62 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "DemoMicroService.BankCashService.Domain.Shared": {
+      "path": "src/DemoMicroService.BankCashService.Domain.Shared/DemoMicroService.BankCashService.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.BankCashService.Application.Contracts": {
+      "path": "src/DemoMicroService.BankCashService.Application.Contracts/DemoMicroService.BankCashService.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.BankCashService.Domain": {
+      "path": "src/DemoMicroService.BankCashService.Domain/DemoMicroService.BankCashService.Domain.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.BankCashService.Application": {
+      "path": "src/DemoMicroService.BankCashService.Application/DemoMicroService.BankCashService.Application.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.BankCashService.EntityFrameworkCore": {
+      "path": "src/DemoMicroService.BankCashService.EntityFrameworkCore/DemoMicroService.BankCashService.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.BankCashService.HttpApi": {
+      "path": "src/DemoMicroService.BankCashService.HttpApi/DemoMicroService.BankCashService.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.BankCashService.HttpApi.Client": {
+      "path": "src/DemoMicroService.BankCashService.HttpApi.Client/DemoMicroService.BankCashService.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.BankCashService.HttpApi.Host": {
+      "path": "src/DemoMicroService.BankCashService.HttpApi.Host/DemoMicroService.BankCashService.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.BankCashService.Blazor": {
+      "path": "src/DemoMicroService.BankCashService.Blazor/DemoMicroService.BankCashService.Blazor.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.BankCashService.Domain.Tests": {
+      "path": "test/DemoMicroService.BankCashService.Domain.Tests/DemoMicroService.BankCashService.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "DemoMicroService.BankCashService.EntityFrameworkCore.Tests": {
+      "path": "test/DemoMicroService.BankCashService.EntityFrameworkCore.Tests/DemoMicroService.BankCashService.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "DemoMicroService.BankCashService.TestBase": {
+      "path": "test/DemoMicroService.BankCashService.TestBase/DemoMicroService.BankCashService.TestBase.abppkg",
+      "folder": "test"
+    },
+    "DemoMicroService.BankCashService.Application.Tests": {
+      "path": "test/DemoMicroService.BankCashService.Application.Tests/DemoMicroService.BankCashService.Application.Tests.abppkg",
+      "folder": "test"
+    }
+  }
+}

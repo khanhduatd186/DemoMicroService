@@ -10,6 +10,8 @@ using DemoMicroService.Shared.Hosting;
 using Volo.Abp.Modularity;
 using Volo.Abp.Caching;
 using Volo.Abp.Caching.StackExchangeRedis;
+using DemoMicroService.BankCashService;
+using DemoMicroService.BankCashService.EntityFrameworkCore;
 
 namespace DemoMicroService.DbMigrator;
 
@@ -23,7 +25,9 @@ namespace DemoMicroService.DbMigrator;
     typeof(AdministrationServiceEntityFrameworkCoreModule),
     typeof(AdministrationServiceApplicationContractsModule),
     typeof(ProductServiceApplicationContractsModule),
-    typeof(ProductServiceEntityFrameworkCoreModule)
+    typeof(ProductServiceEntityFrameworkCoreModule),
+     typeof(BankCashServiceApplicationContractsModule),
+    typeof(BankCashServiceEntityFrameworkCoreModule)
 )]
 public class DemoMicroServiceDbMigratorModule : AbpModule
 {

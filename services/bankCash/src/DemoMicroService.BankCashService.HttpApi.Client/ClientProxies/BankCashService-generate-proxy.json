@@ -1,0 +1,75 @@
+{
+  "modules": {
+    "BankCashService": {
+      "rootPath": "BankCashService",
+      "remoteServiceName": "BankCashService",
+      "controllers": {
+        "DemoMicroService.BankCashService.Samples.SampleController": {
+          "controllerName": "Sample",
+          "controllerGroupName": "BankCashService",
+          "isRemoteService": true,
+          "isIntegrationService": false,
+          "apiVersion": null,
+          "type": "DemoMicroService.BankCashService.Samples.SampleController",
+          "interfaces": [
+            {
+              "type": "DemoMicroService.BankCashService.Samples.ISampleAppService",
+              "name": "ISampleAppService",
+              "methods": [
+                {
+                  "name": "GetAsync",
+                  "parametersOnMethod": [],
+                  "returnValue": {
+                    "type": "DemoMicroService.BankCashService.Samples.SampleDto",
+                    "typeSimple": "DemoMicroService.BankCashService.Samples.SampleDto"
+                  }
+                },
+                {
+                  "name": "GetAuthorizedAsync",
+                  "parametersOnMethod": [],
+                  "returnValue": {
+                    "type": "DemoMicroService.BankCashService.Samples.SampleDto",
+                    "typeSimple": "DemoMicroService.BankCashService.Samples.SampleDto"
+                  }
+                }
+              ]
+            }
+          ],
+          "actions": {
+            "GetAsync": {
+              "uniqueName": "GetAsync",
+              "name": "GetAsync",
+              "httpMethod": "GET",
+              "url": "api/BankCashService/sample",
+              "supportedVersions": [],
+              "parametersOnMethod": [],
+              "parameters": [],
+              "returnValue": {
+                "type": "DemoMicroService.BankCashService.Samples.SampleDto",
+                "typeSimple": "DemoMicroService.BankCashService.Samples.SampleDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "DemoMicroService.BankCashService.Samples.ISampleAppService"
+            },
+            "GetAuthorizedAsync": {
+              "uniqueName": "GetAuthorizedAsync",
+              "name": "GetAuthorizedAsync",
+              "httpMethod": "GET",
+              "url": "api/BankCashService/sample/authorized",
+              "supportedVersions": [],
+              "parametersOnMethod": [],
+              "parameters": [],
+              "returnValue": {
+                "type": "DemoMicroService.BankCashService.Samples.SampleDto",
+                "typeSimple": "DemoMicroService.BankCashService.Samples.SampleDto"
+              },
+              "allowAnonymous": null,
+              "implementFrom": "DemoMicroService.BankCashService.Samples.ISampleAppService"
+            }
+          }
+        }
+      }
+    }
+  },
+  "types": {}
+}

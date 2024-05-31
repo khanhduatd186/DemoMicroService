@@ -1,6 +1,21 @@
 {
   "ReverseProxy": {
     "Routes": {
+      "BankCash": {
+        "ClusterId": "BankCash",
+        "Match": {
+          "Path": "/api/bankCash-service/{**catch-all}"
+        }
+      },
+      "BankCashSwagger": {
+        "ClusterId": "BankCash",
+        "Match": {
+          "Path": "/swagger-json/BankCash/swagger/v1/swagger.json"
+        },
+        "Transforms": [
+          { "PathRemovePrefix": "/swagger-json/BankCash" }
+        ]
+      },
       "AbpApi": {
         "ClusterId": "Administration",
         "Match": {
@@ -142,6 +157,13 @@
         "Destinations": {
           "AuthServer": {
             "Address": "https://localhost:44322/"
+          }
+        }
+      },
+      "BankCash": {
+        "Destinations": {
+          "BankCash": {
+            "Address": "https://localhost:45262/"
           }
         }
       },

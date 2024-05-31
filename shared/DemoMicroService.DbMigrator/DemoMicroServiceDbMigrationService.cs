@@ -17,6 +17,7 @@ using Volo.Abp.Identity;
 using Volo.Abp.MultiTenancy;
 using Volo.Abp.Uow;
 using Volo.Saas.Tenants;
+using DemoMicroService.BankCashService.EntityFrameworkCore;
 
 namespace DemoMicroService.DbMigrator;
 
@@ -99,7 +100,7 @@ public class DemoMicroServiceDbMigrationService : ITransientDependency
             await MigrateDatabaseAsync<AdministrationServiceDbContext>(cancellationToken);
             await MigrateDatabaseAsync<IdentityServiceDbContext>(cancellationToken);
             await MigrateDatabaseAsync<ProductServiceDbContext>(cancellationToken);
-
+            await MigrateDatabaseAsync<BankCashServiceDbContext>(cancellationToken);
             await uow.CompleteAsync(cancellationToken);
         }
 

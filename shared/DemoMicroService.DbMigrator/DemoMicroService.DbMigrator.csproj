@@ -22,6 +22,9 @@
         <ProjectReference Include="..\..\services\saas\src\DemoMicroService.SaasService.Application.Contracts\DemoMicroService.SaasService.Application.Contracts.csproj" />
         <ProjectReference Include="..\..\services\product\src\DemoMicroService.ProductService.Application.Contracts\DemoMicroService.ProductService.Application.Contracts.csproj" />
         <ProjectReference Include="..\..\services\product\src\DemoMicroService.ProductService.EntityFrameworkCore\DemoMicroService.ProductService.EntityFrameworkCore.csproj" />
+
+		<ProjectReference Include="..\..\services\bankCash\src\DemoMicroService.BankCashService.Application.Contracts\DemoMicroService.BankCashService.Application.Contracts.csproj" />
+		<ProjectReference Include="..\..\services\bankCash\src\DemoMicroService.BankCashService.EntityFrameworkCore\DemoMicroService.BankCashService.EntityFrameworkCore.csproj" />
     </ItemGroup>
 
     <ItemGroup>

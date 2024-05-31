@@ -33,7 +33,7 @@ public class DemoMicroServiceWebGatewayModule : AbpModule
                 authority: configuration["AuthServer:Authority"]!,
                 scopes: new[] {
                     /* Requested scopes for authorization code request and descriptions for swagger UI only */
-                    "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService"
+                    "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService","BankCashService"
                 },
                 apiTitle: "Web Gateway API",
                 discoveryEndpoint: configuration["AuthServer:MetadataAddress"]
@@ -100,7 +100,8 @@ public class DemoMicroServiceWebGatewayModule : AbpModule
             "AccountService",
             "IdentityService",
             "SaasService",
-            "ProductService"
+            "ProductService",
+            "BankCashService"
         );
     }
 

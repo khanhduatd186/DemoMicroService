@@ -78,12 +78,13 @@ public class OpenIddictDataSeeder : ITransientDependency
         await CreateScopesAsync("AdministrationService");
         await CreateScopesAsync("SaasService");
         await CreateScopesAsync("ProductService");
+        await CreateScopesAsync("BankCashService");
     }
 
     private async Task CreateWebGatewaySwaggerClientsAsync()
     {
         await CreateSwaggerClientAsync("WebGateway",
-            new[] { "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService" });
+            new[] { "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService", "BankCashService" });
     }
 
     private async Task CreateSwaggerClientAsync(string name, string[]? scopes = null)
@@ -109,6 +110,7 @@ public class OpenIddictDataSeeder : ITransientDependency
             var administrationServiceRootUrl = _configuration[$"OpenIddict:Resources:AdministrationService:RootUrl"]?.EnsureEndsWith('/');
             var saasServiceRootUrl = _configuration[$"OpenIddict:Resources:SaasService:RootUrl"]?.EnsureEndsWith('/');
             var productServiceRootUrl = _configuration[$"OpenIddict:Resources:ProductService:RootUrl"]?.EnsureEndsWith('/');
+            var bankCashServiceRootUrl = _configuration[$"OpenIddict:Resources:BankCashService:RootUrl"]?.EnsureEndsWith('/');
 
             await CreateApplicationAsync(
                 name: swaggerClientId!,
@@ -126,6 +128,7 @@ public class OpenIddictDataSeeder : ITransientDependency
                     $"{administrationServiceRootUrl}swagger/oauth2-redirect.html", // AdministrationService redirect uri
                     $"{saasServiceRootUrl}swagger/oauth2-redirect.html", // SaasService redirect uri
                     $"{productServiceRootUrl}swagger/oauth2-redirect.html", // ProductService redirect uri
+                     $"{bankCashServiceRootUrl}swagger/oauth2-redirect.html", // ProductService redirect uri
                 }
             );
         }
@@ -164,7 +167,7 @@ public class OpenIddictDataSeeder : ITransientDependency
                 OpenIddictConstants.GrantTypes.AuthorizationCode, OpenIddictConstants.GrantTypes.Implicit
             },
             scopes: commonScopes.Union(new[] {
-                "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService"
+                "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService","BankCashService"
             }).ToList(),
             redirectUris: new List<string> { $"{webClientRootUrl}signin-oidc" },
             postLogoutRedirectUris: new List<string>() { $"{webClientRootUrl}signout-callback-oidc" },
@@ -182,7 +185,7 @@ public class OpenIddictDataSeeder : ITransientDependency
             secret: null,
             grantTypes: new List<string> { OpenIddictConstants.GrantTypes.AuthorizationCode },
             scopes: commonScopes.Union(new[] {
-                "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService"
+                "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService","BankCashService"
             }).ToList(),
             redirectUris: new List<string> { $"{blazorClientRootUrl}authentication/login-callback" },
             postLogoutRedirectUris: new List<string> { $"{blazorClientRootUrl}authentication/logout-callback" },
@@ -203,7 +206,7 @@ public class OpenIddictDataSeeder : ITransientDependency
                 OpenIddictConstants.GrantTypes.AuthorizationCode, OpenIddictConstants.GrantTypes.Implicit
             },
             scopes: commonScopes.Union(new[] {
-                "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService"
+                "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService","BankCashService"
             }).ToList(),
             redirectUris: new List<string> { $"{blazorServerClientRootUrl}signin-oidc" },
             postLogoutRedirectUris: new List<string> { $"{blazorServerClientRootUrl}signout-callback-oidc" },
@@ -223,7 +226,7 @@ public class OpenIddictDataSeeder : ITransientDependency
             {
                 OpenIddictConstants.GrantTypes.AuthorizationCode, OpenIddictConstants.GrantTypes.Implicit
             },
-            scopes: commonScopes.Union(new[] { "AccountService", "AdministrationService", "ProductService" }).ToList(),
+            scopes: commonScopes.Union(new[] { "AccountService", "AdministrationService", "ProductService", "BankCashService" }).ToList(),
             redirectUris: new List<string> { $"{publicWebClientRootUrl}signin-oidc" },
             postLogoutRedirectUris: new List<string> { $"{publicWebClientRootUrl}signout-callback-oidc" },
             clientUri: publicWebClientRootUrl,
@@ -246,7 +249,7 @@ public class OpenIddictDataSeeder : ITransientDependency
                 "Impersonation"
             },
             scopes: commonScopes.Union(new[] {
-                "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService"
+                "AccountService", "IdentityService", "AdministrationService", "SaasService", "ProductService","BankCashService"
             }).ToList(),
             redirectUris: new List<string> { $"{angularClientRootUrl}" },
             postLogoutRedirectUris: new List<string> { $"{angularClientRootUrl}" },

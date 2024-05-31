@@ -40,6 +40,14 @@ services:
   env:
     - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
     - Kestrel__Certificates__Default__Password=a9df9b48-fb9c-4f4b-a14f-448a653ab7b6
+- name: bankCash-service
+  project: services/bankCash/src/DemoMicroService.BankCashService.HttpApi.Host/DemoMicroService.BankCashService.HttpApi.Host.csproj
+  bindings:
+    - protocol: https
+      port: 45262
+  env:
+    - Kestrel__Certificates__Default__Path=../../../../etc/dev-cert/localhost.pfx
+    - Kestrel__Certificates__Default__Password=a9df9b48-fb9c-4f4b-a14f-448a653ab7b6
 - name: web-gateway
   project: gateways/web/src/DemoMicroService.WebGateway/DemoMicroService.WebGateway.csproj
   bindings:
